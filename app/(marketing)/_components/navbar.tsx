@@ -4,8 +4,8 @@ import Link from 'next/link'
 
 const Navbar = () => {
   return (
-    <nav className='px-4 py-2 border-b  fixed top-0 w-full bg-background'>
-      <div className='mx-auto max-w-screen-xl flex justify-between items-center'>
+    <nav className='px-4 border-b fixed top-0 w-full bg-background'>
+      <div className='mx-auto h-12 max-w-screen-xl flex justify-between items-center'>
         <div className='md:block hidden'>
           <Logo />
         </div>
@@ -13,7 +13,7 @@ const Navbar = () => {
           <Button size='sm' variant='outline' asChild>
             <Link href='/login'>Login</Link>
           </Button>
-          <Button size='sm' asChild className='bg-blue-600 hover:bg-blue-800'>
+          <Button size='sm' asChild>
             <Link href='/signup'>Get Taskity for free</Link>
           </Button>
         </div>
