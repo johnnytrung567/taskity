@@ -104,7 +104,7 @@ const NavItem = ({
   )
 }
 
-NavItem.Skeleton = () => {
+NavItem.Skeleton = function NavItemSkeleton() {
   return (
     <div className='flex gap-x-2'>
       <Skeleton className='w-9 h-9 shrink-0' />
