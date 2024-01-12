@@ -57,7 +57,7 @@ const Sidebar = ({ storageKey = 'sidebar-state' }: SidebarProps) => {
   }
 
   return (
-    <>
+    <div className='overflow-y-auto max-h-[calc(100vh_-_48px_-_40px)]'>
       <div className='text-xs font-medium flex items-center mb-1'>
         <span className='pl-4'>Workspaces</span>
         <Button asChild size='icon' variant='ghost' className='ml-auto w-6 h-6'>
@@ -81,7 +81,7 @@ const Sidebar = ({ storageKey = 'sidebar-state' }: SidebarProps) => {
           />
         ))}
       </Accordion>
-    </>
+    </div>
   )
 }
 export default Sidebar
